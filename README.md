@@ -1,1 +1,1 @@
-# vuetifu-form-builder
+# vuetify-form-builder
