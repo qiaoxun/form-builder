@@ -1,18 +1,16 @@
 <template>
-  <div>
-    <Checkbox/>
+  <div id="App">
+    <HelloWorld/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld'
-import Checkbox from './components/form-elements/Checkbox'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    Checkbox
+    HelloWorld
   },
   data () {
     return {
