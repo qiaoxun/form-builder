@@ -1,27 +1,31 @@
 <template>
   <v-app>
-  <v-container grid-list-md text-xs-center>
-    <v-layout row wrap>
-    <v-flex xs6 dark>
-      <draggable class="list-group" element="div" v-model="list" :options="dragOptions" :move="onMove" @start="isDragging=true" @end="isDragging=false">
-        <div v-for="form in list">
-          <component :is="form.name">
-          </component>
-        </div>
-      </draggable>
-    </v-flex>
+    <v-container grid-list-md text-xs-center>
+      <v-layout row wrap>
+        <v-flex xs6>
+          <v-card>
+            <draggable class="list-group" element="div" v-model="list" :options="dragOptions" :move="onMove" @start="isDragging=true" @end="isDragging=false">
+              <div v-for="form in list" :key="form.name">
+                <component :is="form.name">
+                </component>
+              </div>
+            </draggable>
+          </v-card>
+        </v-flex>
 
-    <v-flex xs6>
-      <draggable class="list-group" element="div" v-model="list2" :options="dragOptions" :move="onMove">
-        <div v-for="form in list2" :key="form.name">
-          <component :is="form.name">
-          </component>
-        </div>
-      </draggable>
-    </v-flex>
-    </v-layout>
-  </v-container>
-</v-app>
+        <v-flex xs6>
+          <v-card>
+            <draggable class="list-group" element="div" v-model="list2" :options="dragOptions" :move="onMove">
+              <div v-for="form in list2" :key="form.name">
+                <component :is="form.name">
+                </component>
+              </div>
+            </draggable>
+          </v-card>
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </v-app>
 </template>
 
 <script>
