@@ -1,22 +1,21 @@
 {
     "name": "v-form-builder",
-    "description": "A Super Form Builder (drag & drop) build with VueJS by Seth Phat",
+    "description": "vuetify-form-builder",
     "version": "1.3.0",
-    "author": "Phat Tran <phattranminh96@gmail.com> (https://sethphat.com)",
+    "author": "",
     "keywords": [
         "vue",
         "vuejs",
         "form builder",
-        "drag & drop",
-        "seth phat"
+        "drag & drop"
     ],
     "license": "MIT",
     "private": false,
     "main": "dist/vue-form-builder.min.js",
-    "homepage": "https://github.com/sethsandaru/vue-form-builder",
+    "homepage": "https://github.com/qiaoxun/vuetify-form-builder",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/sethsandaru/vue-form-builder.git"
+        "url": "git+https://github.com/qiaoxun/vuetify-form-builder"
     },
     "scripts": {
         "test": "webpack --json > stats.json",

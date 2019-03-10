@@ -88,7 +88,7 @@ module.exports = [
         output: {
             path: path.resolve(__dirname, './dist'),
             publicPath: '/dist/',
-            filename: 'app.boundle.js'
+            filename: 'build.js'
         },
     })
 ];
