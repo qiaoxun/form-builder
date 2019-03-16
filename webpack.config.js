@@ -3,17 +3,16 @@ var webpack = require('webpack');
 var merge = require('webpack-merge');
 var APP_DIR = path.resolve(__dirname, 'src');
 var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const { VueLoaderPlugin } = require('vue-loader');
 
 var commomConfig = {
     entry: './src/main.js',
+    mode: 'development',
     module: {
         rules: [
             {
                 test: /\.css$/,
-                use: [
-                    'vue-style-loader',
-                    'css-loader'
-                ],
+                use:['style-loader','css-loader']
             }, {
                 test: /\.vue$/,
                 loader: 'vue-loader',
@@ -46,7 +45,7 @@ var commomConfig = {
         extensions: ['*', '.js', '.vue', '.json'],
         alias: {
             'vue$': 'vue/dist/vue.esm.js',
-            'sethFormBuilder': APP_DIR,
+            '@': APP_DIR,
         },
     },
     devServer: {
@@ -60,23 +59,11 @@ var commomConfig = {
     devtool: '#eval-source-map',
     // target: 'node',
     plugins: [
-        new webpack.DefinePlugin({
-            'process.env': {
-                NODE_ENV: '"production"'
-            }
-        }),
-        new webpack.optimize.UglifyJsPlugin( {
-            minimize : true,
-            sourceMap : false,
-            mangle: true,
-            compress: {
-                warnings: false
-            }
-        } ),
         new webpack.optimize.AggressiveMergingPlugin(),
         new webpack.LoaderOptionsPlugin({
             minimize: true
         }),
+        new VueLoaderPlugin()
         // new BundleAnalyzerPlugin()
     ]
 };
