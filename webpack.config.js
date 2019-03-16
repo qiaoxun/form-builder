@@ -65,14 +65,6 @@ var commomConfig = {
                 NODE_ENV: '"production"'
             }
         }),
-        new webpack.optimize.UglifyJsPlugin( {
-            minimize : true,
-            sourceMap : false,
-            mangle: true,
-            compress: {
-                warnings: false
-            }
-        } ),
         new webpack.optimize.AggressiveMergingPlugin(),
         new webpack.LoaderOptionsPlugin({
             minimize: true
