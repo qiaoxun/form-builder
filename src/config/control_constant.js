@@ -7,28 +7,28 @@ import {faCheck} from '@fortawesome/free-solid-svg-icons/faCheck';
 import {faDatabase} from '@fortawesome/free-solid-svg-icons/faDatabase';
 
 // GUI Control
-import GUICheckboxControl from 'sethFormBuilder/gui/ui/controls/CheckboxControl';
-import GUIDatePickerControl from 'sethFormBuilder/gui/ui/controls/DatePickerControl';
-import GUINumberControl from 'sethFormBuilder/gui/ui/controls/NumberControl';
-import GUISelectControl from 'sethFormBuilder/gui/ui/controls/SelectControl';
-import GUITextControl from 'sethFormBuilder/gui/ui/controls/TextControl';
-import GUITimePickerControl from 'sethFormBuilder/gui/ui/controls/TimePickerControl';
+import GUICheckboxControl from '@/gui/ui/controls/CheckboxControl';
+import GUIDatePickerControl from '@/gui/ui/controls/DatePickerControl';
+import GUINumberControl from '@/gui/ui/controls/NumberControl';
+import GUISelectControl from '@/gui/ui/controls/SelectControl';
+import GUITextControl from '@/gui/ui/controls/TextControl';
+import GUITimePickerControl from '@/gui/ui/controls/TimePickerControl';
 
 // TEMPLATE Control
-import TEMPLATETextControl from 'sethFormBuilder/template/ui/common/controls/TextControl';
-import TEMPLATENumberControl from 'sethFormBuilder/template/ui/common/controls/NumberControl';
-import TEMPLATECheckboxControl from 'sethFormBuilder/template/ui/common/controls/CheckboxControl';
-import TEMPLATEDatePickerControl from 'sethFormBuilder/template/ui/common/controls/DatePickerControl';
-import TEMPLATETimePickerControl from 'sethFormBuilder/template/ui/common/controls/TimePickerControl';
-import TEMPLATESelectControl from 'sethFormBuilder/template/ui/common/controls/SelectControl';
+import TEMPLATETextControl from '@/template/ui/common/controls/TextControl';
+import TEMPLATENumberControl from '@/template/ui/common/controls/NumberControl';
+import TEMPLATECheckboxControl from '@/template/ui/common/controls/CheckboxControl';
+import TEMPLATEDatePickerControl from '@/template/ui/common/controls/DatePickerControl';
+import TEMPLATETimePickerControl from '@/template/ui/common/controls/TimePickerControl';
+import TEMPLATESelectControl from '@/template/ui/common/controls/SelectControl';
 
 // CONFIG CONTROL
-import SIDEBARDatePickerControl from 'sethFormBuilder/template/ui/sidebar_items/DatePickerConfigComponent';
-import SIDEBARTimePickerControl from 'sethFormBuilder/template/ui/sidebar_items/TimePickerConfigComponent';
-import SIDEBARSelectControl from 'sethFormBuilder/template/ui/sidebar_items/SelectConfigComponent';
-import SIDEBARNumberControl from 'sethFormBuilder/template/ui/sidebar_items/NumberConfigComponent';
-import SIDEBARTextControl from 'sethFormBuilder/template/ui/sidebar_items/TextConfigComponent';
-import SIDEBARCheckboxControl from 'sethFormBuilder/template/ui/sidebar_items/CheckboxConfigComponent';
+import SIDEBARDatePickerControl from '@/template/ui/sidebar_items/DatePickerConfigComponent';
+import SIDEBARTimePickerControl from '@/template/ui/sidebar_items/TimePickerConfigComponent';
+import SIDEBARSelectControl from '@/template/ui/sidebar_items/SelectConfigComponent';
+import SIDEBARNumberControl from '@/template/ui/sidebar_items/NumberConfigComponent';
+import SIDEBARTextControl from '@/template/ui/sidebar_items/TextConfigComponent';
+import SIDEBARCheckboxControl from '@/template/ui/sidebar_items/CheckboxConfigComponent';
 
 // Template Control
 // special key for control:

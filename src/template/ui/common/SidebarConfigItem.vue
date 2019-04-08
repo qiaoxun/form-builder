@@ -172,10 +172,10 @@
 </template>
 
 <script>
-    import {FORM_CONSTANTS, CONTROL_CONSTANTS} from "sethFormBuilder/config/constants";
+    import {FORM_CONSTANTS, CONTROL_CONSTANTS} from "@/config/constants";
     import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-    import Select2Control from "sethFormBuilder/third_party_controls/Select2Control";
-    import SelectAjaxModal from "sethFormBuilder/template/ui/common/sidebar_config/SelectAjaxModal";
+    import Select2Control from "@/third_party_controls/Select2Control";
+    import SelectAjaxModal from "@/template/ui/common/sidebar_config/SelectAjaxModal";
 
     export default {
         name: "sidebar-config-item",

@@ -1,4 +1,4 @@
-import {HookListFactory} from 'sethFormBuilder/base/hook_list_factory';
+import {HookListFactory} from '@/base/hook_list_factory';
 
 var Hooks = {};
 

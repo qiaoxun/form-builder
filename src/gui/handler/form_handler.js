@@ -1,4 +1,4 @@
-import {FORM_CONSTANTS} from "sethFormBuilder/config/constants";
+import {FORM_CONSTANTS} from "@/config/constants";
 
 const FormHandler = {};
 

@@ -16,8 +16,8 @@
 </template>
 
 <script>
-    import Select2Control from "sethFormBuilder/third_party_controls/Select2Control";
-    import {CONTROL_CONSTANTS} from "sethFormBuilder/config/constants";
+    import Select2Control from "@/third_party_controls/Select2Control";
+    import {CONTROL_CONSTANTS} from "@/config/constants";
 
     export default {
         name: "TimePickerConfigComponent",

@@ -1,4 +1,4 @@
-import {CONTROL_TYPES} from "sethFormBuilder/config/control_constant";
+import {CONTROL_TYPES} from "@/config/control_constant";
 
 const ValidationHandler = {
     section_info: {},

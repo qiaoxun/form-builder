@@ -37,11 +37,11 @@
 </template>
 
 <script>
-    import {CONTROL_CONSTANTS} from "sethFormBuilder/config/constants";
+    import {CONTROL_CONSTANTS} from "@/config/constants";
     import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-    import {Hooks} from 'sethFormBuilder/gui/components/hook_lists';
-    import {CONTROL_TYPES} from "sethFormBuilder/config/control_constant";
-    import ControlDatePicker from 'sethFormBuilder/third_party_controls/DatePickerControl';
+    import {Hooks} from '@/gui/components/hook_lists';
+    import {CONTROL_TYPES} from "@/config/control_constant";
+    import ControlDatePicker from '@/third_party_controls/DatePickerControl';
 
     export default {
         name: "DatePickerControl",

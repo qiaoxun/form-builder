@@ -22,13 +22,13 @@
 </template>
 
 <script>
-    import {FORM_CONSTANTS} from "sethFormBuilder/config/constants";
-    import {CONTROL_TYPES} from "sethFormBuilder/config/control_constant";
+    import {FORM_CONSTANTS} from "@/config/constants";
+    import {CONTROL_TYPES} from "@/config/control_constant";
     //import ControlItem from "./ControlItem";
-    import {eventBus, EventHandlerConstant} from 'sethFormBuilder/template/handler/event_handler';
+    import {eventBus, EventHandlerConstant} from '@/template/handler/event_handler';
     import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-    import {Hooks} from 'sethFormBuilder/template/components/hook_lists';
-    import {ControlHandler} from 'sethFormBuilder/template/handler/control_handler';
+    import {Hooks} from '@/template/components/hook_lists';
+    import {ControlHandler} from '@/template/handler/control_handler';
 
     export default {
         components: {FontAwesomeIcon},

@@ -9,26 +9,18 @@
 </template>
 
 <script>
-    // load js
-    if (require) {
-        require('sethFormBuilder/config/loader');
-    }
-
     // load necessary
     import {Hooks as GUI_Hooks} from './gui/components/hook_lists';
     import {Hooks as Template_Hooks} from './template/components/hook_lists';
-    import {FormHandler} from "sethFormBuilder/gui/handler/form_handler";
-    import {SethPhatToaster} from "sethFormBuilder/config/toaster";
-
-    window.SethPhatToaster = SethPhatToaster;
+    import {FormHandler} from "@/gui/handler/form_handler";
 
     // import
     import FormBuilderTemplate from './template/FormBuilderTemplate';
     import FormBuilderGui from './gui/FormBuilderGui';
 
     // special hook
-    import {ValidateSettingHandler} from "sethFormBuilder/template/handler/validate_setting_handler";
-    import {CONTROL_TYPES} from "sethFormBuilder/config/control_constant";
+    import {ValidateSettingHandler} from "@/template/handler/validate_setting_handler";
+    import {CONTROL_TYPES} from "@/config/control_constant";
 
     export default {
         name: "FormBuilder",

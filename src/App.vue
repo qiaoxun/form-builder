@@ -25,7 +25,7 @@
         name: 'app',
         data() {
             return {
-                app_name: "Demo Vue Form Builder - Seth Sandaru",
+                app_name: "Demo Vue Form Builder",
                 nav_links: [
                     {to: "/", label: "Index"},
                     {to: "/template", label: "Template"},
