@@ -5,8 +5,8 @@
 </template>
 
 <script>
-    import {Hooks} from 'sethFormBuilder/gui/components/hook_lists';
-    import {CONTROL_TYPES} from "sethFormBuilder/config/control_constant";
+    import {Hooks} from '@/gui/components/hook_lists';
+    import {CONTROL_TYPES} from "@/config/control_constant";
 
     export default {
         name: "ControlComponent",

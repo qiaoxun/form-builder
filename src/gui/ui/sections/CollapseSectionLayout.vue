@@ -25,8 +25,8 @@
 </template>
 
 <script>
-    import RowComponent from "sethFormBuilder/gui/ui/RowComponent";
-    import {Hooks} from 'sethFormBuilder/gui/components/hook_lists';
+    import RowComponent from "@/gui/ui/RowComponent";
+    import {Hooks} from '@/gui/components/hook_lists';
 
     export default {
         name: "CollapseSectionLayout",

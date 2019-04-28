@@ -35,9 +35,9 @@
 </template>
 
 <script>
-    import {FormHandler} from "sethFormBuilder/gui/handler/form_handler";
+    import {FormHandler} from "@/gui/handler/form_handler";
     import ControlComponent from "./ControlComponent";
-    import {Hooks} from 'sethFormBuilder/gui/components/hook_lists';
+    import {Hooks} from '@/gui/components/hook_lists';
 
     export default {
         name: "RowComponent",

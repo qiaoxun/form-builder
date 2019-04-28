@@ -54,11 +54,11 @@
 </template>
 
 <script>
-    import {FORM_CONSTANTS} from "sethFormBuilder/config/constants";
+    import {FORM_CONSTANTS} from "@/config/constants";
     import RowComponent from "./RowComponent";
     import SectionConfigModal from "./common/SectionConfigModal";
     import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-    import {Hooks} from 'sethFormBuilder/template/components/hook_lists';
+    import {Hooks} from '@/template/components/hook_lists';
 
     export default {
         components: {SectionConfigModal, RowComponent, FontAwesomeIcon},

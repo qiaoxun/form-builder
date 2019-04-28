@@ -36,11 +36,11 @@
 </template>
 
 <script>
-    import {CONTROL_CONSTANTS} from "sethFormBuilder/config/constants";
-    import {CONTROL_TYPES} from "sethFormBuilder/config/control_constant";
+    import {CONTROL_CONSTANTS} from "@/config/constants";
+    import {CONTROL_TYPES} from "@/config/control_constant";
     import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-    import {Hooks} from 'sethFormBuilder/gui/components/hook_lists';
-    import ControlTimePicker from 'sethFormBuilder/third_party_controls/TimePickerControl';
+    import {Hooks} from '@/gui/components/hook_lists';
+    import ControlTimePicker from '@/third_party_controls/TimePickerControl';
 
     export default {
         name: "TimePickerControl",

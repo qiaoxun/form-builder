@@ -53,7 +53,7 @@
 <script>
     import SelectAjaxModal from './common/SelectAjaxModal';
     import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-    import {FORM_CONSTANTS} from "sethFormBuilder/config/constants";
+    import {FORM_CONSTANTS} from "@/config/constants";
 
     export default {
         name: "SelectConfigComponent",

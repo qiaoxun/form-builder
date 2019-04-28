@@ -39,7 +39,7 @@
 </template>
 
 <script>
-    import {Hooks} from 'sethFormBuilder/gui/components/hook_lists';
+    import {Hooks} from '@/gui/components/hook_lists';
 
     export default {
         name: "TextControl",

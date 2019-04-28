@@ -1,4 +1,4 @@
-import {CallbackHandler} from "sethFormBuilder/base/callback_handler";
+import {CallbackHandler} from "@/base/callback_handler";
 
 const DEFAULT_PRIORITY = 10;
 

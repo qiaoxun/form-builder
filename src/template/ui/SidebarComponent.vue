@@ -37,11 +37,11 @@
 </template>
 
 <script>
-    import {CONTROL_TYPES} from "sethFormBuilder/config/control_constant";
-    import {eventBus, EventHandlerConstant} from 'sethFormBuilder/template/handler/event_handler';
-    import {ControlHandler} from 'sethFormBuilder/template/handler/control_handler';
+    import {CONTROL_TYPES} from "@/config/control_constant";
+    import {eventBus, EventHandlerConstant} from '@/template/handler/event_handler';
+    import {ControlHandler} from '@/template/handler/control_handler';
     import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-    import {Hooks} from 'sethFormBuilder/template/components/hook_lists';
+    import {Hooks} from '@/template/components/hook_lists';
     import BaseConfigComponent from "./sidebar_items/BaseConfigComponent";
     import BaseStyleComponent from "./sidebar_items/BaseStyleComponent";
 

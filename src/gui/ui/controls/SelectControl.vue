@@ -38,9 +38,9 @@
 </template>
 
 <script>
-    import {Hooks} from 'sethFormBuilder/gui/components/hook_lists';
-    import Select2Control from "sethFormBuilder/third_party_controls/Select2Control";
-    import Select2MultipleControl from "sethFormBuilder/third_party_controls/Select2MultipleControl";
+    import {Hooks} from '@/gui/components/hook_lists';
+    import Select2Control from "@/third_party_controls/Select2Control";
+    import Select2MultipleControl from "@/third_party_controls/Select2MultipleControl";
     export default {
         name: "SelectControl",
         components: {Select2MultipleControl, Select2Control},
