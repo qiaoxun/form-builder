@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import {router} from './test/router';
 import './assets/css/bootstrap.min.css';
+import './plugins/vuetify'
 
 // load js
 if (require) {
