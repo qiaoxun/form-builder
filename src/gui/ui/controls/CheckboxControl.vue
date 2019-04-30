@@ -36,6 +36,11 @@
     export default {
         name: "CheckboxControl",
         props: ['control', 'labelPosition'],
+        data() {
+          return {
+             checkList: ['选中且禁用','复选框 A']
+          }
+        },
         mounted() {
             if (this.control.isChecked) {
                 this.control.value = true;

@@ -1,14 +1,14 @@
 <template>
-    <div class="row" style="margin: 0 20px;">
-        <div class="col-md-9">
+    <el-row>
+        <el-col :span="18" style="padding: 0 20px">
             <section-component :form="form" ref="SectionComponent"></section-component>
-        </div>
-        <div class="col-md-3">
+        </el-col>
+        <el-col :span="6">
             <sidebar-component></sidebar-component>
-        </div>
+        </el-col>
 
         <preview-component ref="PreviewComponent" :form="form"></preview-component>
-    </div>
+    </el-row>
 </template>
 
 <script>
@@ -18,11 +18,11 @@
     import PreviewComponent from "./ui/PreviewComponent";
     dom.watch();
 
-    var default_form_value = () => ({
-        sections: [],
-        layout: "",
-        _uniqueId: Math.random()
-    });
+    // var default_form_value = () => ({
+    //     sections: [],
+    //     layout: "",
+    //     _uniqueId: Math.random()
+    // });
 
     export default {
         name: "form-builder-template",

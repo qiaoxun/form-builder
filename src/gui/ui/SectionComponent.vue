@@ -1,15 +1,18 @@
 <template>
-    <div class="row" v-if="form !== null">
+    <el-row v-if="form !== null">
         <!-- collapse layout -->
-        <div class="col-md-12 sectionItem" v-if="form.layout === 'collapse'">
-            <collapse-section-layout v-for="(section, index) in form.sections"
+        <el-col :span="12" class="sectionItem" v-if="form.layout === 'collapse1'">
+        <!-- <div class="col-md-12 sectionItem" v-if="form.layout === 'collapse'"> -->
+            <collapse-section-layout v-for="(section) in form.sections"
                                      :key="section.name"
                                      :section="section">
             </collapse-section-layout>
-        </div>
+        <!-- </div> -->
+        </el-col>
 
         <!-- tab layout-->
-        <div class="col-md-12 sectionItem" v-if="form.layout === 'tab'">
+        <el-col :span="12" class="sectionItem" v-if="form.layout === 'tab'">
+        <!-- <div class="col-md-12 sectionItem" v-if="form.layout === 'tab'"> -->
             <tab-header-section-layout :sections="form.sections"></tab-header-section-layout>
 
             <div class="tab-content">
@@ -19,8 +22,9 @@
                                          :is-first="index === 0">
                 </tab-body-section-layout>
             </div>
-        </div>
-    </div>
+        <!-- </div> -->
+        </el-col>
+    </el-row>
 </template>
 
 <script>
