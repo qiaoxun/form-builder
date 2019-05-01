@@ -98,7 +98,7 @@
 
                 var hasError = FormHandler.validate(this.form);
                 if (showError && hasError) {
-                    SethPhatToaster.error("There are errors on the page. Please rectify the errors so the action can be completed.");
+                    this.$message.error("There are errors on the page. Please rectify the errors so the action can be completed.");
                 }
 
                 // true => no error | false => errors

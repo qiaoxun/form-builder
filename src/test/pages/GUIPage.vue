@@ -54,7 +54,7 @@
                     .done(data => {
                         if (data.error) {
                             self.selectedFormID = "";
-                            SethPhatToaster.error(data.error);
+                            this.$message.error(data.error);
                             return;
                         }
 
@@ -65,7 +65,7 @@
                 var result = this.$refs.FormGUI.validate();
 
                 if (result === true) {
-                    SethPhatToaster.success("Form is valid!");
+                    this.$message("Form is valid!");
                 }
             }
         },

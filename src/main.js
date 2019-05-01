@@ -12,9 +12,6 @@ if (require) {
 
 Vue.use(ElementUI);
 
-import {SethPhatToaster} from "@/config/toaster";
-window.SethPhatToaster = SethPhatToaster;
-
 new Vue({
     el: '#app',
     router,

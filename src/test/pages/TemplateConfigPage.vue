@@ -42,7 +42,7 @@
                 get_form(this.id)
                     .done(data => {
                         if (data.error) {
-                            SethPhatToaster.error(data.error);
+                            this.$message.error(data.error);
                             self.$router.push("/template");
                             return;
                         }
@@ -54,7 +54,7 @@
             },
             saveForm() {
                 if (this.name === "") {
-                    SethPhatToaster.error("Please input your form config title");
+                    this.$message.error("Please input your form config title");
                     return;
                 }
 
@@ -69,9 +69,9 @@
                 let self = this;
                 promise.done(data => {
                     if (data.error) {
-                        SethPhatToaster.error(data.error);
+                        this.$message.error(data.error);
                     } else {
-                        SethPhatToaster.success(data.success);
+                        this.$message(data.success);
                         self.$router.push("/template");
                     }
                 });

@@ -140,7 +140,7 @@
                 let oldControl = self.row.controls[controlIndex];
                 // check if existed name in this section
                 if (control.fieldName !== oldControl.fieldName && ControlHandler.isControlNameExisted(self.row.name, control.fieldName)) {
-                    SethPhatToaster.error("This field Name is already existed in the current section.");
+                    this.$message.error("This field Name is already existed in the current section.");
                     return;
                 }
 

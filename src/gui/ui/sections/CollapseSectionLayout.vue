@@ -16,7 +16,6 @@
                     </div>
                 </div>
             </div>
-
             <div :id="section.name + '_gui_body'" class="collapseBody collapse show">
                 <row-component :section="section" :key="section.name"></row-component>
             </div>

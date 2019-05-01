@@ -57,12 +57,12 @@
                         if (_.isArray(data)) {
                             self.dataSource = data;
                         } else {
-                            SethPhatToaster.error(`Control data error: ${this.control.label}.`);
+                            this.$message.error(`Control data error: ${this.control.label}.`);
                             console.error(`Data for select control of ${this.control.label} is wrong format!`);
                         }
                     })
                     .fail(err => {
-                        SethPhatToaster.error(`Failed to load data for control: ${this.control.label}.`);
+                        this.$message.error(`Failed to load data for control: ${this.control.label}.`);
                         console.error("Request for Select Data Source Failed: ", err);
                     });
             } else {
