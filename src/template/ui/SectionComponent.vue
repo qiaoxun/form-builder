@@ -140,7 +140,6 @@ export default {
       if (b4Run === false) {
         return;
       }
-      console.log('this.form', this.form)
       this.form.sections[secIndex].rows.push(rowInfo);
       // after hook
       Hooks.Row.afterAdd.run(rowInfo, this.form.sections[secIndex]);
@@ -151,6 +150,7 @@ export default {
   },
   mounted() {
     let self = this;
+    console.log('  $("#sectionWrapper").sortable',   $("#sectionWrapper").sortable)
     $("#sectionWrapper").sortable({
       cursor: "move",
       delay: 200,
